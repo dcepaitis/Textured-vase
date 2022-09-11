@@ -18,7 +18,7 @@ $(function () {
   $("#WebGL-output").append(webGLRenderer.domElement);
   camControl = new THREE.TrackballControls(camera, webGLRenderer.domElement);
 
-  const texture = new THREE.TextureLoader().load('https://i.imgur.com/xhRGQLu.png', (texture) => {
+  const texture = new THREE.TextureLoader().load('./xhRGQLu.png', (texture) => {
     texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
     texture.offset.set(0, 0);
     texture.repeat.set(5, 5);
